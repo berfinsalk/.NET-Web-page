@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="final_website.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: right;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="banner" class="auto-style1">
+
+            <em><strong>SİTEME HOŞGELDİNİZ...</strong></em></div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="default.aspx?sayfa=Konu 1" Text="Ay'ın Yapısı ve Özellikleri" Value="Ay'ın Yapısı ve Özellikleri"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="default.aspx?sayfa=Konu 2" Text="Ay'ın Hareketleri ve Evreleri" Value="Ay'ın Hareketleri ve Evreleri"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="default.aspx?sayfa=Sorular" Text="Çözümlü Sorular" Value="Çözümlü Sorular"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <br />
+                <br />
+            <strong>
+            <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Text="Label"></asp:Label>
+            <br />
+            <asp:Image ID="Image1" runat="server" Height="300px" Width="300px" />
+            </strong>
+
+            </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="footer" class="auto-style2">
+
+            <strong><em>Tüm Hakları Saklıdır...<br />
+            BERFİN ŞALK</em></strong></div>
+
+
+    </form>
+</body>
+</html>
